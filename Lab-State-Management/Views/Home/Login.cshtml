@@ -1,0 +1,9 @@
+﻿@using Lab_State_Management.Models
+
+
+@{
+    User u = (User)Session["User"];
+}
+
+
+<p>Yeah! @u.UserName.ToUpper()  you made it. But I know your password is @u.Password.ToUpper()</p>
